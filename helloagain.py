@@ -3,7 +3,7 @@ from flask import Flask, render_template, request
 app = Flask(__name__)
 
 
-#default methods is GET
+# default methods is GET
 
 
 # ordinary route
@@ -15,8 +15,8 @@ def hello_world():
 # route with restful
 @app.route('/user/<username>')
 def user(username):
-    #reuse variables in your tempalate
-    return render_template('user.html',username=username)
+    # reuse variables in your tempalate
+    return render_template('user.html', username=username)
 
 
 @app.route('/sqrt/<int:number>')
@@ -27,7 +27,7 @@ def sqrt(number):
 # route vid args
 @app.route('/args')
 def args():
-    return "malin is %s" % request.args.get("malin","missing")
+    return "malin is %s" % request.args.get("malin", "missing")
 
 
 # method post (and get)
@@ -45,9 +45,6 @@ def message():
     else:
 
         return "unsupported method"
-
-
-
 
 if __name__ == '__main__':
     app.debug=True
