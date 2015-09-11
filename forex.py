@@ -1,4 +1,4 @@
-import requets
+import requests
 
 
 def convert(fromcurrency,tocurrency,amount):
