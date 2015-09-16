@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 
 
-messages=["hej"]
+messages=["Okay, lets det on with this!"]
 
 #default methods is GET
 
